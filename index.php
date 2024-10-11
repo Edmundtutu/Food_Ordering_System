@@ -59,7 +59,7 @@
     <!-- Featured Dishes Section -->
     <section>
         <h2>Featured Dishes</h2>
-        <div class="dishes-container">
+        <div class="dishes-container" id="menuSection">
             <div class="dish">
                 <img class="image" src="public/images/chicken.jpg" alt="Dish 1">
                 <h3>Spicy Chicken Wings</h3>
