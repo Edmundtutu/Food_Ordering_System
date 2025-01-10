@@ -11,13 +11,13 @@ $stmt = $conn->prepare("
 $stmt->execute();
 $menuItems = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-// Group menu items by category
+// Group menu items by category  
 $menuByCategory = [];
 foreach ($menuItems as $item) {
     $menuByCategory[$item['category']][] = $item;
 }
 ?>
-
+<!-- Hmm but Sam we need to improve this kind of coupling -->
 <!DOCTYPE html>
 <html>
 <head>
